@@ -21,6 +21,13 @@ This repository contains a robust Python-based automation tool that utilizes Sel
 - BeautifulSoup4
 - Chrome Remote Debugging
 
+### Repository Structure
+- **`scraper.py`**: The core script of the project. Contains the main logic for browser automation (via remote debugging), traversing exams, and extracting questions, answers, and explanations.
+- **`documentos_de_prueba/`**: A folder containing testing and development scripts (like `parse_dump.py` to `parse_dump6.py`, `debug.py`, and HTML dumps) used to iterate and refine BeautifulSoup extraction logic before integrating it into the main scraper.
+- **`fix_json.py` & `verify_json.py`**: Utilities to clean up, structure, and validate the resulting `examen_completo.json` file to ensure the extracted data is correctly formatted.
+- **`screenshot_stitch.py`, `check_images.py`, & `check_fixed.py`**: Helper scripts for managing, verifying, and potentially stitching downloaded diagrams and images linked to the exams.
+- **`requirements.txt`**: Python dependencies required to run the project.
+
 ---
 
 ## Español
@@ -39,3 +46,10 @@ Este repositorio contiene una robusta herramienta de automatización basada en P
 - Selenium WebDriver
 - BeautifulSoup4
 - Chrome Remote Debugging
+
+### Estructura del Repositorio
+- **`scraper.py`**: El script central del proyecto. Contiene toda la lógica principal de automatización (vía depuración remota), navegación por los exámenes y extracción de las preguntas, respuestas y justificaciones.
+- **`documentos_de_prueba/`**: Carpeta que contiene scripts de prueba y desarrollo (como `parse_dump.py` a `parse_dump6.py`, `debug.py` y volcados HTML), utilizados para iterar y perfeccionar la lógica de extracción antes de integrarla en el scraper principal.
+- **`fix_json.py` y `verify_json.py`**: Utilidades para limpiar, estructurar y validar el archivo resultante `examen_completo.json`, asegurando que los datos extraídos estén formateados correctamente.
+- **`screenshot_stitch.py`, `check_images.py`, y `check_fixed.py`**: Scripts complementarios para manejar, verificar y procesar las imágenes y diagramas descargados vinculados a los exámenes.
+- **`requirements.txt`**: Dependencias de Python necesarias para ejecutar el proyecto.
